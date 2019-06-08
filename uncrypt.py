@@ -23,30 +23,21 @@ def separ(err):
         errcd.append(errc[i].split("■"))
         if errcd[i][0] == "":
               del errcd[i][0]
-    for i in range(len(errc)):
-        if len(errcd[i])>1:
-            errcd[i][0] = errcd[i][0] + "solo"
-            res.append(errcd[i][0])
-            res.append(errcd[i][1])
-        else:
-            res.append(errcd[i])
+        res.append(errcd[i])
+    k = len(res)
+    del res[k-1]
     return res
 
-#--------------------CONVERSION STRING EN BASE10----------
-def conv_base10(dep):
+#--------------------CONVERSION BaseFX----------
+def conv_FX(dep):
     base10char = []
     for i in range(len(dep)):
         char = dep[i]
         new_char = char[0]
-        char10=0
-        if "solo" in new_char:
-            a=ord(new_char-"solo")
-            print(a)
-            base10char.append(a)
-        else:
-           for k in range(len(new_char)):
-               char10 = char10+ fx.FX33_reverse(str(new_char[k]))
-           base10char.append(char10)
+        res=0
+        for k in range(len(new_char)):
+              res = res+ fx.FX33_reverse(str(new_char[k]))
+        base10char.append(res)
     return base10char
     
 
@@ -83,11 +74,11 @@ def decode(err):
         
     
     
-entry = input("Code encrypté ? >> ")  
+drr = input("Code encrypté ? >> ")  
 primary_key = int(input("clé primaire ? >> "))
-dep = separ(entry)
-dec = conv_base10(dep)
-bine = binary_decompo(dec)
-res_f = somme_fibo(bine)
+drr_1 = separ(drr)
+drr_2 = conv_FX(drr_1)
+drr_3 = binary_decompo(drr_2)
+res_f = somme_fibo(drr_3)
 mdp_decode = decode(res_f)
 print(mdp_decode)
