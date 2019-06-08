@@ -2,7 +2,8 @@
 """
 Created on Thu Jun  6 10:24:56 2019
 
-@author: titip
+@author: thibault poncetta
+
 ASCII table personalisée
 """
 def FX33(n):
