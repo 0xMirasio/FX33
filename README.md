@@ -1,7 +1,9 @@
 # FX33 Algorithm
 Welcome ! 
 The FX33 encryption is a script made in python which use fibonnaci numbers and Zekendorf decomposition with some probability and base changement. 
-Use the scripts to encode your files or password ! 
+Use the scripts to encode your files or password !
+Edit: You can use now FX33.exe to decrypt crypted file. 
+
 Ps : if you encode a file with encrypt_file.py, use uncrypt_file.py to decode it or it will not work.
 This project is under developement, many bugs are still present and this is not the final code. 
 
@@ -14,6 +16,9 @@ NEXT developement :
 -Graphical Interface developement
 
 CHANGELOG :
+
+-v06:
+Added a graphical software ! Open FX33.exe and decrypt file.
 
 v05:
 -Added file encryption : just specify a file and it will crypt it. Decode it with the uncrypt_file script
