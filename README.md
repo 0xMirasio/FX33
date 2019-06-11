@@ -10,12 +10,11 @@ This project is under developement, many bugs are still present and this is not 
 You can download for free the scripts and use/modify it for GNU/open source utilisation.
 If you want to report a bug or make some discuss, you can contact me at my mail : thibault.poncetta@gmail.com
 
-NEXT developement : 
-
--Encryption of any file.
--Graphical Interface developement
-
 CHANGELOG :
+
+-v07 : 
+Encryption of binary/photo/video file is now possible (use encrypt_file/decrypt_file for text file).
+Use encrypt_binary/decrypt_binary to use the algorithm.
 
 -v06:
 Added a graphical software ! Open FX33.exe and decrypt file.
