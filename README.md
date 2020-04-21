@@ -1,3 +1,4 @@
 Basic Fibonnaci Algorithm for crypting file or strings.
 under dev
-not totally working for the moment (some unicode bugs)
+may contains unicode bugs
+closed projects
