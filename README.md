@@ -1,4 +1,4 @@
-Basic Fibonnaci Algorithm for crypting file or strings.
+Basic Fibonnaci Algorithm for encoding file or strings.
 under dev
 may contains unicode bugs
 closed projects
